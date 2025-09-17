@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh; 
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #4a4e69; 
+    padding: 1rem;
+    height: 100%; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: width 0.3s;
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+    transform: scale();
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px; 
+    font-size: large;
+}
+
+.overview {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 30%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.stat-card:hover {
+    background-color: #dcdcdc; 
+    transform: translateY(-2px);
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: smaller;
+}
+
+button {
+    background-color: #4a4e69; 
+    color: white;
+    border: none;
+
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3b3e5c; 
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 75px; 
+    }
+
+    .sidebar h2 {
+        font-size: 1rem; 
+    }
+
+    .sidebar ul li {
+        margin: 10px 0; 
+    }
+
+    .stat-card {
+        flex: 1 1 100%; 
+    }
+}
+
+.logo{
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    box-shadow: #3b3e5c;
+    transition: transform 0.5s;
+    flex: 1 1 100%;
+
+}
+    
+.logo :hover{
+    transform: scale(1.05s);
+}
+
+.logo {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjusted shadow for better visibility */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Scale up the logo */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Stronger shadow on hover */
+}
